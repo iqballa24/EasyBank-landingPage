@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 62.5%; //1rem = 10px
+  height: 100%;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  color: $color-dark-blue;
+  font-size: 5rem;
+}
+
+h3 {
+  color: $color-dark-blue;
+  font-size: 3.6rem;
+}
+
+h5 {
+  color: $color-dark-blue;
+  font-size: 2.1rem;
+}
+
+p {
+  color: $color-grayish-blue;
+}
+
+.text-xxs {
+  font-size: 0.9rem;
+}
+
+.text-xs {
+  font-size: 1.2rem;
+}
+
+.text-sm {
+  font-size: 1.4rem;
+}
+
+.text-md {
+  font-size: 1.5rem;
+}
+
+.text-base {
+  font-size: 1.6rem;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+}
+
+.container {
+  @include container;
+  padding-top: 6rem;
+}
+
+.fluid {
+  max-width: 100%;
+  height: auto;
+}
