@@ -1,0 +1,21 @@
+.btn {
+  font-size: 1.5rem;
+  padding: 1.4rem 2.8rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  border: none;
+
+  &-primary {
+    color: white;
+    background: linear-gradient(
+      to right,
+      $color-lime-green,
+      $color-bright-cyan
+    );
+
+    &:hover {
+      background-position: 15.2rem;
+      transition: all 0.8s ease;
+    }
+  }
+}
