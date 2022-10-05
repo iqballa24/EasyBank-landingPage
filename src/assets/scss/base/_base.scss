@@ -27,11 +27,13 @@ h1 {
 h3 {
   color: $color-dark-blue;
   font-size: 3.6rem;
+  font-weight: 300;
 }
 
 h5 {
   color: $color-dark-blue;
   font-size: 2.1rem;
+  font-weight: 300;
 }
 
 p {
@@ -57,6 +59,32 @@ p {
 
 .text-base {
   font-size: 1.6rem;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.color-dark-blue {
+  color: $color-dark-blue;
+}
+
+.color-grayish-blue {
+  color: $color-grayish-blue !important;
+}
+.color-grayish-blue2 {
+  color: $color-grayish-blue2 !important;
+}
+.color-grayish-blue3 {
+  color: $color-grayish-blue3 !important;
 }
 
 .text-lg {

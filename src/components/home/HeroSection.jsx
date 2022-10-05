@@ -4,7 +4,7 @@ import MockUpsImg from "../../assets/img/image-mockups.png";
 
 const HeroSection = ({data}) => {
   return (
-    <div className="hero-section">
+    <div className="container hero-section">
       <div className="w-full w-md-6 hero-section-title">
         <h1>{data.heroSection.title}</h1>
         <p className="text-base">{data.heroSection.text}</p>
