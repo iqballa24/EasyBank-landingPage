@@ -15,11 +15,13 @@ body {
 body {
   font-family: "Public Sans", sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 h1 {
   color: $color-dark-blue;
   font-size: 5rem;
+  font-weight: 300;
 }
 
 h3 {
@@ -34,6 +36,7 @@ h5 {
 
 p {
   color: $color-grayish-blue;
+  line-height: 1.6;
 }
 
 .text-xxs {
@@ -61,11 +64,15 @@ p {
 }
 
 .container {
+  position: relative;
   @include container;
-  padding-top: 6rem;
 }
 
 .fluid {
   max-width: 100%;
   height: auto;
+}
+
+.relative {
+  position: relative;
 }

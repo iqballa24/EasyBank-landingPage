@@ -1,17 +1,17 @@
 .nav {
   &-container {
     @include container;
-    display: flex;
     position: relative;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
     z-index: 1;
     flex-direction: row;
     background-color: $color-white;
+    box-shadow: 0px 0.8rem 4rem rgba(0, 0, 0, 0.04);
 
     @include media-breakpoint-down(md) {
-      @include padding-y(3rem);
+      @include padding-y(2.4rem);
     }
   }
 
@@ -29,20 +29,21 @@
     flex-direction: row;
     justify-content: space-around;
     font-size: 1.5rem;
+    background-color: $color-white;
 
     @include media-breakpoint-down(md) {
-      display: none;
+      opacity: 0;
       align-items: center;
       justify-content: center;
       position: absolute;
       flex-direction: column;
+      font-size: 1.2rem;
       top: 13rem;
       left: 15%;
       width: 70%;
       border-radius: 1rem;
-      box-shadow: 0px 44px 300px -2px rgba(83, 77, 107, 0.3);
-      -webkit-box-shadow: 0px 44px 300px -2px rgba(83, 77, 107, 0.3);
-      -moz-box-shadow: 0px 44px 300px -2px rgba(83, 77, 107, 0.3);
+      box-shadow: 0px 0.8rem 4rem rgba(0, 0, 0, 0.08);
+      transition: opacity 0.3s ease;
       @include padding-y(2rem);
     }
 
@@ -88,7 +89,7 @@
     }
 
     &.show {
-      display: flex;
+      opacity: 1;
     }
   }
 
