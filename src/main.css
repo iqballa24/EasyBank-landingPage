@@ -26,11 +26,13 @@ h1 {
 h3 {
   color: hsl(233deg, 26%, 24%);
   font-size: 3.6rem;
+  font-weight: 300;
 }
 
 h5 {
   color: hsl(233deg, 26%, 24%);
   font-size: 2.1rem;
+  font-weight: 300;
 }
 
 p {
@@ -56,6 +58,34 @@ p {
 
 .text-base {
   font-size: 1.6rem;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.color-dark-blue {
+  color: hsl(233deg, 26%, 24%);
+}
+
+.color-grayish-blue {
+  color: hsl(233deg, 8%, 62%) !important;
+}
+
+.color-grayish-blue2 {
+  color: hsl(233deg, 8%, 62%) !important;
+}
+
+.color-grayish-blue3 {
+  color: hsl(0deg, 0%, 98%) !important;
 }
 
 .text-lg {
@@ -402,6 +432,32 @@ p {
   transition: all 0.8s ease;
 }
 
+.card-feature {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.card-feature img {
+  width: 100%;
+  max-width: 7.2rem;
+}
+.card-feature h5 {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+.card-article {
+  background-color: #fff;
+  box-shadow: 0px 0.8rem 4rem rgba(0, 0, 0, 0.04);
+  margin-bottom: 2rem;
+  border-radius: 1.4rem;
+  overflow: hidden;
+}
+.card-article-image img {
+  width: 100%;
+}
+.card-article-title {
+  padding: 3rem 2rem;
+}
+
 .nav-container {
   width: 100%;
   margin-left: auto;
@@ -558,7 +614,7 @@ p {
   width: 100%;
   bottom: 0;
   display: flex;
-  margin-top: 23rem;
+  margin-top: 4rem;
   flex-direction: column;
   align-items: center;
   background-color: hsl(233deg, 26%, 24%);
@@ -745,4 +801,46 @@ p {
   .hero-section-image img {
     width: 100%;
   }
+}
+
+.feature-section {
+  background-color: hsl(0deg, 0%, 98%);
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+.feature-section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+@media only screen and (min-width: 75em) {
+  .feature-section-title {
+    text-align: left;
+    width: 46%;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .feature-section-title h1 {
+    font-size: 3rem;
+  }
+}
+.feature-section-title p {
+  font-size: 1.4rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+@media only screen and (min-width: 48em) {
+  .feature-section-title p {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.latestArticle-section {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+.latestArticle-section h3 {
+  text-align: center;
+  margin-bottom: 4rem;
 }/*# sourceMappingURL=main.css.map */
