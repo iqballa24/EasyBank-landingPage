@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../../assets/img/logo.svg";
-import { navMenu } from "../../constant/nav";
+import Button from "../Button";
+import { navMenu } from "../../constant";
 import { NavLink } from "react-router-dom";
 
 const Nav = () => {
@@ -33,7 +34,6 @@ const Nav = () => {
         <div
           className="nav-hamburger"
           onClick={() => {
-            document.body.classList.add("disabledScroll");
             setIsOpen((prev) => !prev);
             setWidthSpan((prev) =>
               prev.span1 == "50"
@@ -54,7 +54,7 @@ const Nav = () => {
           ></span>
         </div>
         <div className="nav-button">
-          <button className="btn btn-primary">Request Invite</button>
+          <Button isPrimary>Request Invite</Button>
         </div>
       </div>
     </nav>
