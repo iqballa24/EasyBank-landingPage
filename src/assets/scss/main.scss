@@ -1,4 +1,4 @@
 @import "abstracts/mixins", "abstracts/variables";
-@import "base/base";
-@import "components/buttons";
-@import "layouts/nav";
+@import "base/base", "base/flex", "base/width";
+@import "components/buttons", "components/cards";
+@import "layouts/nav", "layouts/footer", "layouts/home";

@@ -1,0 +1,149 @@
+.hero {
+  &-cover {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("./assets/img/bg-intro-mobile.svg");
+    overflow: hidden;
+
+    @include media-breakpoint-up(md) {
+      background-repeat: no-repeat;
+      background-position: 40rem -15rem;
+      background-image: url("./assets/img/bg-intro-desktop.svg");
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-position: 65rem -30rem;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      overflow: visible;
+    }
+  }
+
+  &-section {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    @include padding-y(16rem);
+
+    @include media-breakpoint-up(md) {
+      height: 65rem;
+      flex-direction: row;
+      @include padding-y(10rem);
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include padding-y(16rem);
+    }
+
+    &-title {
+      display: flex;
+      flex-direction: column;
+
+      @include media-breakpoint-down(md) {
+        text-align: center;
+        align-items: center;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        padding-right: 21rem;
+      }
+
+      h1 {
+        // font-size: 5.1rem;
+        @include media-breakpoint-down(md) {
+          font-size: 4rem;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 3rem;
+        }
+      }
+
+      p {
+        font-size: 1.4rem;
+        @include margin-y(1.6rem);
+
+        @include media-breakpoint-up(md) {
+          font-size: 1.6rem;
+          @include margin-y(2rem);
+        }
+      }
+    }
+
+    &-image {
+      position: relative;
+      text-align: center;
+
+      @include media-breakpoint-up(md) {
+        position: absolute;
+        right: -6.5rem;
+        margin: 0;
+      }
+
+      @include media-breakpoint-up(lg) {
+        right: -16.8rem;
+        top: 12rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        right: -10.8rem;
+      }
+
+      img {
+        margin-top: -20rem;
+        // width: 100%;
+        max-width: 80.5rem;
+
+        @include media-breakpoint-down(xxl) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.feature {
+  &-section {
+    background-color: $color-grayish-blue3;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+
+    &-title {
+      text-align: center;
+      margin-bottom: 4rem;
+
+      @include media-breakpoint-up(xl) {
+        text-align: left;
+        width: 46%;
+      }
+
+      h1 {
+        @include media-breakpoint-down(sm) {
+          font-size: 3rem;
+        }
+      }
+
+      p {
+        font-size: 1.4rem;
+        @include margin-y(1.6rem);
+
+        @include media-breakpoint-up(md) {
+          font-size: 1.6rem;
+          @include margin-y(2rem);
+        }
+      }
+    }
+  }
+}
+
+.latestArticle{
+  &-section{
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+
+    h3{
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+  }
+}

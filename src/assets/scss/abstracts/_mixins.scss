@@ -4,11 +4,11 @@
   @include padding-x(1.2rem);
 
   @include media-breakpoint-up(md) {
-    @include padding-x(3rem);
+    @include padding-x(2.5rem);
   }
 
   @include media-breakpoint-up(lg) {
-    @include padding-x(14rem);
+    @include padding-x(12rem);
   }
 }
 
