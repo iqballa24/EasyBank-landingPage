@@ -6,7 +6,20 @@ import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [widthSpan, setWidthSpan] = useState({ span1: 100, span3: 100 });
+  const [rotateZ, setRotateZ] = useState({
+    span1: 0,
+    span2: 0,
+  });
+  const [translate, setTranslate] = useState({
+    x: {
+      span1: 0,
+      span2: 0,
+    },
+    y: {
+      span1: 0,
+      span2: 0,
+    },
+  });
 
   return (
     <nav className="nav">
@@ -35,23 +48,30 @@ const Nav = () => {
           className="nav-hamburger"
           onClick={() => {
             setIsOpen((prev) => !prev);
-            setWidthSpan((prev) =>
-              prev.span1 == "50"
-                ? { span1: 100, span3: 100 }
-                : { span1: 50, span3: 75 }
+            setRotateZ((prev) =>
+              !isOpen ? { span1: 45, span2: -45 } : { span1: 0, span2: 0 }
+            );
+            setTranslate((prev) =>
+              !isOpen
+                ? { x: { span1: 8, span2: 3 }, y: { span1: 2, span2: 2 } }
+                : { x: { span1: 0, span2: 0 }, y: { span1: 0, span2: 0 } }
             );
           }}
         >
           <input type="checkbox" id="check" />
           <span
             className="nav-span"
-            style={{ width: `${widthSpan.span1}%` }}
+            style={{
+              transform: `rotatez(${rotateZ.span1}deg) translate(${translate.x.span1}px, ${translate.y.span1}px)`,
+            }}
           ></span>
-          <span className="nav-span"></span>
           <span
             className="nav-span"
-            style={{ width: `${widthSpan.span3}%` }}
+            style={{
+              transform: `rotatez(${rotateZ.span2}deg) translate(${translate.x.span2}px, ${translate.y.span2}px)`,
+            }}
           ></span>
+          <span className="nav-span" style={{display: `${isOpen ? 'none' : 'block'}`}}></span>
         </div>
         <div className="nav-button">
           <Button isPrimary>Request Invite</Button>
