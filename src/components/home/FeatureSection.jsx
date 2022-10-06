@@ -5,7 +5,7 @@ const FeatureSection = ({ data }) => {
     <div className="feature-section">
       <div className="container flex flex-column">
         <div className="feature-section-title">
-          <h3>Why use easy bank?</h3>
+          <h3>Why choose EasyBank?</h3>
           <p className="text-base">
             We leverage Open Banking to turn your bank account into your
             financial hub. Control your finances like never before.
