@@ -15,7 +15,11 @@ function App() {
         <Route path="*" index element={<Home />} />
         <Route path="about" element={<NotFound />} />
         <Route path="contact" element={<NotFound />} />
-        <Route path="*" element={<Navigate to="/home" replace />} />
+        <Route path="blogs" element={<NotFound />} />
+        <Route path="careers" element={<NotFound />} />
+        <Route path="support" element={<NotFound />} />
+        <Route path="privacy-police" element={<NotFound />} />
+        <Route path="" element={<Navigate to="/home" replace />} />
       </Routes>
     </Router>
   );
