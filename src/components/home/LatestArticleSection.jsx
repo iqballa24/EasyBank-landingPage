@@ -3,7 +3,7 @@ import React from "react";
 const LatestArticleSection = ({ data }) => {
   return (
     <div className="container latestArticle-section">
-      <h3>Latest Article</h3>
+      <h3>Latest Articles</h3>
       <div className="flex flex-wrap">
         {data.article.data.map((item, index) => (
           <div key={index} className="w-full w-md-6 w-lg-3 card-container">

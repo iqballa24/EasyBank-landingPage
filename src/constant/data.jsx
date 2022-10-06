@@ -42,14 +42,14 @@ export const data = {
     title: "Latest Article",
     data: [
       {
-        img: imgConfetti,
+        img: imgCurrency,
         author: "Claire Robinson",
         title: "Receive money in any currency with no fees",
         content:
           "The world is getting smaller and we're becoming more mobile. So why should you be forced to only receive money in a single...",
       },
       {
-        img: imgCurrency,
+        img: imgRestaurant,
         author: "Wilson Hutton",
         title: "Treat yourself without worrying about money",
         content:
@@ -63,7 +63,7 @@ export const data = {
           "We want you to enjoy your travels. This is why we don't charge any fees on purchase while you're abroad. We'll even show you...",
       },
       {
-        img: imgRestaurant,
+        img: imgConfetti,
         author: "Claire Robinson",
         title: "Our invite-only Beta accounts are now live!",
         content:
