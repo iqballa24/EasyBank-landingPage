@@ -23,6 +23,11 @@
     justify-content: center;
 
     .item-social-media {
+      &:hover {
+        filter: invert(40%) sepia(15%) saturate(2282%) hue-rotate(111deg)
+          brightness(94%) contrast(90%);
+        transition: 0.3s ease-out;
+      }
       @include margin-x(0.8rem);
     }
   }

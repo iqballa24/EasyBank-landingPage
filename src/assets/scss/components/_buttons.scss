@@ -15,6 +15,7 @@
     );
 
     &:hover {
+      filter: brightness(110%);
       background-position: 15.2rem;
       transition: all 0.8s ease;
     }

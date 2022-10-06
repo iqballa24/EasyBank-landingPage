@@ -5,23 +5,6 @@ const NotFound = () => {
   return (
     <Layout>
       <div>NotFound</div>
-      <div>NotFound</div>
-      <div>NotFound</div>
-      <div>NotFound</div>
-      <div>NotFound</div>
-      <div>NotFound</div>
-      <div>NotFound</div>
-      <div>NotFound</div>
-      <div>NotFound</div>
-      <div>NotFound</div>
-      <div>NotFound</div>
-      <div>NotFound</div>
-      <div>NotFound</div>
-      <div>NotFound</div>
-      <div>NotFound</div>
-      <div>NotFound</div>
-      <div>NotFound</div>
-      <div>NotFound</div>
     </Layout>
   );
 };

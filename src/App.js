@@ -15,7 +15,7 @@ function App() {
         <Route path="*" index element={<Home />} />
         <Route path="about" element={<NotFound />} />
         <Route path="contact" element={<NotFound />} />
-        <Route path="*" element={<Navigate to="/home" replace />} />
+        <Route path="" element={<Navigate to="/home" replace />} />
       </Routes>
     </Router>
   );
