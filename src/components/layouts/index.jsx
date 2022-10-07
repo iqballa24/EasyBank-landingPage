@@ -9,7 +9,7 @@ const index = (props) => {
   return (
     <>
       <Nav />
-      <div className={className.join(" ")}>{props.children}</div>
+      <div className={className.join(" ")} role={props.role}>{props.children}</div>
       <Footer />
     </>
   );

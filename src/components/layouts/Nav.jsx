@@ -32,9 +32,8 @@ const Nav = () => {
         <ul className={`nav-menus ${isOpen ? "show" : ""}`}>
           {navMenu.map((item, index) => {
             return (
-              <li>
+              <li key={index}>
                 <NavLink
-                  key={index}
                   to={item.path}
                   className={({ isActive }) =>
                     isActive ? "nav-menus-item active" : "nav-menus-item"

@@ -2,7 +2,7 @@ import React from "react";
 
 const FeatureSection = ({ data }) => {
   return (
-    <div className="feature-section" role="featureSection">
+    <div className="feature-section">
       <div className="container flex flex-column">
         <div className="feature-section-title">
           <h1 className="text-xl">Why choose EasyBank?</h1>

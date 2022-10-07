@@ -5,7 +5,7 @@ import { data } from "../constant/data";
 
 const Home = () => {
   return (
-    <Layout className="hero-cover">
+    <Layout className="hero-cover" role="main">
       <HomeComponents data={data} />
     </Layout>
   );

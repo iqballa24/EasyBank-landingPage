@@ -2,7 +2,7 @@ import React from "react";
 
 const LatestArticleSection = ({ data }) => {
   return (
-    <div className="container latestArticle-section" role="articleSection">
+    <div className="container latestArticle-section">
       <h1 className="text-xl">Latest Articles</h1>
       <div className="flex flex-wrap">
         {data.article.data.map((item, index) => (

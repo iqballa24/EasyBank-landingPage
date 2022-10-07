@@ -6,7 +6,7 @@ import { footerMenu, socialMedia } from "../../constant";
 
 const Footer = () => {
   return (
-    <footer className="footer" role="footer">
+    <footer className="footer" role="contentinfo">
       <div className="flex flex-wrap w-full">
         <div className="w-full w-md-3 flex flex-column">
           <img src={Logo} style={{ width: `13.9rem` }} alt="logo"/>
