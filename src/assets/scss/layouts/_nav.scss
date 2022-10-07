@@ -47,6 +47,12 @@
       @include padding-y(2rem);
     }
 
+    li {
+      display: flex;
+      list-style: none;
+      text-decoration: none;
+      width: 100%;
+    }
     &-item {
       cursor: pointer;
       color: $color-grayish-blue;

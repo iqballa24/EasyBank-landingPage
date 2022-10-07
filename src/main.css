@@ -19,20 +19,7 @@ body {
 
 h1 {
   color: hsl(233deg, 26%, 24%);
-  font-size: 5rem;
-  font-weight: 300;
-}
-
-h3 {
-  color: hsl(233deg, 26%, 24%);
-  font-size: 3.6rem;
-  font-weight: 300;
-}
-
-h5 {
-  color: hsl(233deg, 26%, 24%);
-  font-size: 2.1rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 p {
@@ -58,6 +45,18 @@ p {
 
 .text-base {
   font-size: 1.6rem;
+}
+
+.text-lg {
+  font-size: 2.1rem;
+}
+
+.text-xl {
+  font-size: 3.6rem;
+}
+
+.text-xxl {
+  font-size: 5rem;
 }
 
 .font-light {
@@ -449,7 +448,7 @@ p {
   width: 100%;
   max-width: 7.2rem;
 }
-.card-feature h5 {
+.card-feature h1 {
   margin-top: 1.6rem;
   margin-bottom: 1.6rem;
 }
@@ -548,6 +547,12 @@ p {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+}
+.nav-menus li {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  width: 100%;
 }
 .nav-menus-item {
   cursor: pointer;
@@ -867,12 +872,12 @@ p {
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
-.latestArticle-section h3 {
+.latestArticle-section h1 {
   text-align: center;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 @media only screen and (min-width: 48em) {
-  .latestArticle-section h3 {
+  .latestArticle-section h1 {
     text-align: left;
   }
 }/*# sourceMappingURL=main.css.map */

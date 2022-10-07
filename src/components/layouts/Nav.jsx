@@ -22,7 +22,7 @@ const Nav = () => {
   });
 
   return (
-    <nav className="nav">
+    <nav className="nav" role="navigation">
       <div className="nav-container">
         <div className="nav-logo">
           <NavLink to="/">
@@ -32,15 +32,17 @@ const Nav = () => {
         <ul className={`nav-menus ${isOpen ? "show" : ""}`}>
           {navMenu.map((item, index) => {
             return (
-              <NavLink
-                key={index}
-                to={item.path}
-                className={({ isActive }) =>
-                  isActive ? "nav-menus-item active" : "nav-menus-item"
-                }
-              >
-                {item.name}
-              </NavLink>
+              <li>
+                <NavLink
+                  key={index}
+                  to={item.path}
+                  className={({ isActive }) =>
+                    isActive ? "nav-menus-item active" : "nav-menus-item"
+                  }
+                >
+                  {item.name}
+                </NavLink>
+              </li>
             );
           })}
         </ul>
@@ -71,7 +73,10 @@ const Nav = () => {
               transform: `rotatez(${rotateZ.span2}deg) translate(${translate.x.span2}px, ${translate.y.span2}px)`,
             }}
           ></span>
-          <span className="nav-span" style={{display: `${isOpen ? 'none' : 'block'}`}}></span>
+          <span
+            className="nav-span"
+            style={{ display: `${isOpen ? "none" : "block"}` }}
+          ></span>
         </div>
         <div className="nav-button">
           <Button isPrimary>Request Invite</Button>
